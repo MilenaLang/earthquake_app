@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 #caching -> more efficiency
-@st.cache
+#
 
 def get_data():
     """
@@ -16,7 +16,7 @@ def get_data():
     :return: dataset as pandas dataframe
     """
     try:
-        data = pd.read_csv('earthquakes1800_2021.csv.csv')
+        data = pd.read_csv('earthquakes1800_2021.csv')
     except Exception:
         print(
             "Could not find earthquake file."
